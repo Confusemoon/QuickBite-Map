@@ -25,7 +25,15 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+main {
+    flex: 1; 
+}
+
 /*-----------------------*/
 /*     Header Styles     */
 /*-----------------------*/
@@ -123,7 +131,7 @@ footer {
     background: #2d3436;
     color: white;
     padding: 2rem 0;
-    margin-top: 4rem;
+    margin-top: auto; 
 }
 
 footer .container {
