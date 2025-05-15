@@ -38,15 +38,6 @@ function showPosition(position) {
 function showError(error) {
     let message = 'Error getting location: ';
     switch(error.code) {
-        case error.PERMISSION_DENIED:
-            message += "Please enable location access to track your delivery.";
-            break;
-        case error.POSITION_UNAVAILABLE:
-            message += "Location information is unavailable.";
-            break;
-        case error.TIMEOUT:
-            message += "The request to get location timed out.";
-            break;
         default:
             message += "An unknown error occurred.";
     }
